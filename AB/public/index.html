@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB-Chillies_We give You Good Food</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        figure img {
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!--logo section-->
+            <a href="index.html"> <img src="images/logo.jpg" alt="our logo" class="logo"></a>
+            <!--nav section-->
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/Menu-512.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img src="images/exit (2).jpg" alt="exit menu" id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="menu.html" >Menu/Order Online</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+<!--Caption Section-->
+        <section>
+            <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: red;">Let's Meat</h1>
+            <p class="subhead" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">We love sharing good food with great people. We bring over years of experience and passion to <a href="#">ABCHILLIES</a>. </p>
+        </section>
+    </div>  
+<!--Receipt Section-->    
+    <div class="gray-container">
+        <div class="container">
+            <p class="arts" style="color: red;">Our Receipt</p>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/friedchi.jpg" alt="user testimonial picture">
+                        <blockquote>Fried Chicken</blockquote>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/shreddedspag.jpg" alt="user testimonial picture">
+                        <blockquote>Shredded Spagetti</blockquote>  
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/shawarma.jpg" alt="user testimonial picture">
+                        <blockquote>Shawarma</blockquote> 
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--map section-->
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.4341162145658!2d7.209161757897936!3d8.984270747691642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e7b5baf9d3f93%3A0xdcef2836ea5ea398!2sAB%20Chillies!5e0!3m2!1sen!2sng!4v1591325729197!5m2!1sen!2sng" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!--contact section-->
+    <div class="container">
+        <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Come & Experience The Best</h2>
+        <a href="mailto:abchillies02@gmail.com?Subject=Reservation" class="cta">Make Reservation</a> <!--contact form-->
+    </div>
+
+    <!--footer section-->
+    <footer class="footer-container">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="logo">
+            </a>
+            <p class="address">Abuja-Nigeria</p>
+            <a href="https://www.facebook.com/AbChillies"><img src="images/fb.png" alt="Facebook Profile link"></a> <a href="https://wa.me/2347012127021?text=Hello ABChillies!"><img src="images/what.jpg" alt="WhatsApp Profile link"></a> <a href="#"><img src="images/twitter.jpg" alt="Twitter Profile link"></a>  
+            <ul class="footer-links">
+                <li><a href="terms.html" target="blank">Terms of Services</a></li>
+                <li><a href="privacy.html" target="blank">Privacy Policy</a></li>
+
+            </ul>
+            <p>&copy; AB Chillies 2020</p>
+        </div>
+    </footer>
+    
+    <!--JS section-->
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+
+</html>

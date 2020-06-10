@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AB Chillies</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+        }
+
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: red;
+        }
+        p{
+            text-align: justify;
+        }
+
+        h3 a { 
+            text-decoration: none;
+        }
+
+        .address {
+            text-align: center;
+        }
+
+
+        p a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"> <img src="images/logo.jpg" alt="our logo" class="logo"></a>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/Menu-512.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img src="images/exit (2).jpg" alt="exit menu" id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="menu.html" >Menu/Order Online</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <h2>About Us: AB Chillies</h2>
+        <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">A word from our founder</h3>
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: left; text-align: justify;">Hello, I’m Abdulbasit Adamu, During my years at College of Education Ilorin - Kwara State, I started working at Timah Tastee point Ilorin opposite Kwara State shopping mall Ilorin as a griller (Chicken, Cat Fish, Kebab, e.t.c) for good 2 years, then I started developing interest of going into the kitchen because initially cooking was what I love to do, I became a Chef in Timah Tastee point for a year and half before coming back to Abuja In 2017 where I applied for the position of Chef at Food Cabana, University of Abuja. <br> My dream was to possess my own restaurant which I came up with so many ideas and research. I started AbChillies in 2019 and am grateful to Allah that made it a reality. I am The CEO and Head Chef of ABChillies.</p>
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: left; text-align: justify;">Now, I Cook professionally, I charge modest prices for my food, depending on a range of criteria. The prices here are some of the best you'll find on any restaurant. Welcome to AB Chillies, Sharing good food is our passion.</p>
+        <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: left;" >Abdulbasit Adamu</h3>
+    </div>
+
+    <div>
+        <h2>Meet Our Team</h2>
+        <ul class="collection">
+                
+            <li><a href="images/Profile.jpg"><img src="images/Profile.jpg" alt="nude art"></a>
+                <p>Abdulbasit <br>  (Head Chef/Owner)</p>
+            </li>            
+        </ul>
+
+        <ul class="collection">
+                
+            <li><a href="images/Profile.jpg"><img src="images/nura.jpg" alt="nude art"></a>
+                <p>Nurrudden (NineHood) <br>Sous Chef</p>
+            </li>            
+        </ul>
+
+        <ul class="collection">
+                
+            <li><a href="images/Profile.jpg"><img src="images/mutar.jpg" alt="nude art"></a>
+                <p>Mukthar <br>(kitchen Assistant)</p>
+            </li>            
+        </ul>
+    </div>
+
+
+
+    <div class="container">
+        <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Come & Experience The Best</h2>
+        <a href="mailto:abchillies02@gmail.com?Subject=Reservation" class="cta">Make Reservation</a>
+    </div>
+
+    <footer class="footer-container">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="logo">
+            </a>
+            <p class="address">Abuja-Nigeria</p>
+            <a href="https://www.facebook.com/AbChillies"><img src="images/fb.png" alt="Facebook Profile link"></a> <a href="https://wa.me/2347012127021?text=Hello ABChillies!"><img src="images/what.jpg" alt="WhatsApp Profile link"></a> <a href="#"><img src="images/twitter.jpg" alt="Twitter Profile link"></a>  
+            <ul class="footer-links">
+                <li><a href="terms.html" target="blank">Terms of Services</a></li>
+                <li><a href="privacy.html" target="blank">Privacy Policy</a></li>
+
+            </ul>
+            <p style="text-align: center;">&copy; AB Chillies 2020</p>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+</html>

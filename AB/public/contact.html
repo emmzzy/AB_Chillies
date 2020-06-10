@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AB Chillies</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url(images/Restaurant.jpg);
+            background-position: center;
+            background-repeat:inherit;
+        }
+
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .reserve {
+            text-align: center;
+            text-decoration: none;
+            color: skyblue;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+
+        .address {
+            text-align: center;
+        }
+
+        .msg {
+            font-size: larger;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"> <img src="images/logo.jpg" alt="our logo" class="logo"></a>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/Menu-512.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img src="images/exit (2).jpg" alt="exit menu" id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="menu.html" >Menu/Order Online</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <h1 style="color: red;">Contact: AB Chillies</h1>
+        <h2>Telephone:</h2>
+        <p style="font-weight: bold;">(234) 701 212 7021</p>
+        <p style="font-weight: bold;">(234) 904 270 4080</p>
+
+        <h2>Email:</h2>
+        <p style="font-weight: bold;">abchillies02@gmail.com</p>
+
+        <a href="mailto:abchillies@gmail.com?Subject=Online Booking" target="blank" class="reserve">Online Booking</a>
+
+        <h2>Interested:</h2>
+        <p class="msg">Contact AB Chillies directly through the contact information on this respective page for good food. <br> Thanks.</p>
+
+
+    </div>
+
+
+    <div class="container">
+        <h2>We Provide Quality Food, We Care About Your Health</h2>
+        <a href="mailto:abchillies@gmail.com?Subject=Online Order" class="cta">Order Now</a>
+    </div>
+
+    <footer class="footer-container">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="logo">
+            </a>
+            <p class="address">Abuja-Nigeria</p>
+            <a href="https://www.facebook.com/AbChillies"><img src="images/fb.png" alt="Facebook Profile link"></a> <a href="https://wa.me/2347012127021?text=Hello ABChillies!"><img src="images/what.jpg" alt="WhatsApp Profile link"></a> <a href="#"><img src="images/twitter.jpg" alt="Twitter Profile link"></a>  
+            <ul class="footer-links">
+                <li><a href="terms.html" target="blank">Terms of Services</a></li>
+                <li><a href="privacy.html" target="blank">Privacy Policy</a></li>
+
+            </ul>
+            <p>&copy; AB Chillies 2020</p>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

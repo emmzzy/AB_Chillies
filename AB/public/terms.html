@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - AB Chillies</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+        }
+
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: left;
+        }
+        p{
+            text-align: justify;
+        }
+
+        .address {
+            text-align: center;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"> <img src="images/logo.jpg" alt="our logo" class="logo"></a>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/Menu-512.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img src="images/exit (2).jpg" alt="exit menu" id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="menu.html" >Menu/Order Online</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <h1>Terms of use</h1>
+        <h2>Welcome</h2>
+        <p>Welcome to <a href="index.html"> ABChillies.com</a> and to the ABChillies Members’ websites. Services and products are presented on <a href="index.html"> ABChillies.com</a> and the Members’ Sites. <a href="index.html"> ABChillies.com</a> does not provide services or products to children. If you are under age 13, your parent(s) must use the Website. This Terms of Use sets forth the legally binding terms and conditions for your use of <a href="index.html"> ABChillies.com</a>. You agree to be bound by this Terms of Use, whether you are a visitor (which means you are a user browsing <a href="index.html"> ABChillies.com</a>) or an ABChillies Member (which means you have registered and agreed to the Terms and Conditions for ABChillies Members). You are only authorized to use <a href="index.html"> ABChillies.com</a> if you agree to abide by this Terms of Use and applicable laws. Please read the terms and conditions of this Terms of Use carefully and save it. If you do not agree with the Terms of Use, you should leave <a href="index.html"> ABChillies.com</a> immediately, you may not access or otherwise use the Website or services. ABChillies Members’ Sites are independent from <a href="index.html"> ABChillies.com</a>, therefore check their websites for their terms and conditions.</p>
+        <p>ABChillies Art, LLC reserves the right to change or modify the terms and conditions of this Terms of Use at any time, with such changes or modifications becoming effective immediately upon posting on this Website. You should check the Website frequently to see recent changes. You agree that all agreements, notices, disclosures and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing.</p>
+        <p>You may not use any robot, spider, or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy, or monitor any portion of the Website or any content or Materials, or in any way reproduce or circumvent the navigational structure or presentation of the Website or any content or Materials, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the Website.</p>
+        
+        <h2>Indemnification</h2>
+        <p>You agree to indemnify and hold harmless ABChillies, LLC, its chefs, directors, assigns, licensors, or other respective owners or agents, from any demands, loss, liability, claims, or expenses (including attorney’s fees), by any third party arising out of or in any way connected with any breach or violation by you of this Terms of Use, any use by you of the Website, or any disputes or damages arising out of your use of this Website.</p>
+        
+        <h2>Applicable Law</h2>
+        <p>This Agreement will be governed and construed in the courts with the laws of the Federal Capital Territory and to the extent applicable, of Nigeria, without giving effect to its conflict of laws provisions. You hereby submit, through use of the Website to the exclusive jurisdiction of the courts of the Federal Capital Territory and any Nigeria courts located within its jurisdiction for purposes of any and all litigation arising out of the use of this Website, You waive any objections to the forum of Federal Capital Territory for lack of venue, forum non convenience, or any other jurisdictional ground.</p>
+    </div>
+    
+    <footer class="footer-container">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="logo">
+            </a>
+            <p class="address">Abuja-Nigeria</p>
+            <a href="https://www.facebook.com/AbChillies"><img src="images/fb.png" alt="Facebook Profile link"></a> <a href="https://wa.me/2347012127021?text=Hello ABChillies!"><img src="images/what.jpg" alt="WhatsApp Profile link"></a> <a href="#"><img src="images/twitter.jpg" alt="Twitter Profile link"></a>  
+            <ul class="footer-links">
+                <li><a href="terms.html" target="blank">Terms of Services</a></li>
+                <li><a href="privacy.html" target="blank">Privacy Policy</a></li>
+
+            </ul>
+            <p style="text-align: center;">&copy; AB Chillies 2020</p>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
